@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleksey Orbachevsky — Architect</title>
+  <meta name="description" content="Architect based in Tel Aviv, working across public, residential, and temporary structures. Experience in large firms, facade systems, and spatial installations.">
+  <style>
+    :root {
+      --text-main: #000;
+      --text-dim: rgba(0,0,0,0.55);
+      --bg: #fff;
+      --max-width: 1200px;
+      --pad-section: 80px;
+      --pad-mobile: 48px;
+    }
+
+    * { box-sizing: border-box; margin: 0; -webkit-font-smoothing: antialiased; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    .wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+    section { padding: var(--pad-section) 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    @media (max-width: 768px){ section { padding: var(--pad-mobile) 0; } }
+
+    .two-col { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+    @media (max-width: 768px){ .two-col { grid-template-columns: 1fr; gap: 24px; } }
+
+    h1, h2, h3 { font-weight: 600; line-height: 1.2; color: var(--text-main); letter-spacing: -0.02em; }
+    h1 { font-size: 48px; margin-bottom: 16px; }
+    @media (max-width: 768px){ h1 { font-size: 32px; } }
+    h2 { font-size: 18px; margin-bottom: 24px; color: var(--text-main); }
+    p { font-size: 16px; color: var(--text-main); max-width: 70ch; margin-bottom: 16px; }
+    .dim { color: var(--text-dim); font-size: 14px; line-height: 1.4; margin-bottom: 24px; max-width: 60ch; }
+    img.preview { width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.08); }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(320px,100%),1fr)); gap: 32px; }
+    .project-card h3 { font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; }
+    .project-card p { font-size: 14px; color: var(--text-dim); }
+
+    .contact a { color: var(--text-main); text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.4); }
+    footer { padding: 32px 24px 64px; font-size: 12px; color: var(--text-dim); }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section>
+    <div class="wrap two-col">
+      <div>
+        <h1>Aleksey Orbachevsky</h1>
+        <h2>Architect — Public, Residential & Temporary Structures</h2>
+        <p class="dim">
+          Based in Tel Aviv. Experience across public and residential projects,
+          facade systems, and spatial installations. Former lecturer in architectural design.
+        </p>
+      </div>
+      <div>
+        <img class="preview" src="assets/installation_main.jpg" alt="Installation overview">
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALLATION -->
+  <section>
+    <div class="wrap two-col">
+      <div><h2>Installation Project</h2></div>
+      <div>
+        <p>
+          A temporary installation exploring spatial rhythm and reflection.
+          Designed and built as part of a collaborative creative environment.
+        </p>
+        <img class="preview" src="assets/installation_detail.jpg" alt="Installation detail" style="margin-top:24px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section>
+    <div class="wrap two-col">
+      <div><h2>Practice & Background</h2></div>
+      <div>
+        <p>
+          Professional experience in architectural offices in Russia and Israel.
+          Work includes residential complexes, public facilities, and facade systems,
+          with attention to material logic and spatial coherence.
+        </p>
+        <p class="dim">
+          Public & residential architecture · facade design coordination · cross-disciplinary teamwork · teaching architecture
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section>
+    <div class="wrap">
+      <h2>Selected Work</h2>
+      <div class="projects-grid" style="margin-top:24px;">
+        <div class="project-card">
+          <img class="preview" src="assets/project1.jpg" alt="Project 1">
+          <h3>Residential Tower, Tel Aviv</h3>
+          <p>Facade system development and design coordination.</p>
+        </div>
+        <div class="project-card">
+          <img class="preview" src="assets/project2.jpg" alt="Project 2">
+          <h3>Cultural Center Proposal, Moscow</h3>
+          <p>Concept design and spatial organization of a public facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrap two-col contact">
+      <div><h2>Contact</h2></div>
+      <div>
+        <p>For collaborations or professional inquiries:</p>
+        <p><a href="mailto:aleksey.orbachevsky@gmail.com">aleksey.orbachevsky@gmail.com</a></p>
+        <p class="dim">Tel Aviv · 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2025 Aleksey Orbachevsky. All rights reserved.</div>
+  </footer>
+</body>
+</html>
